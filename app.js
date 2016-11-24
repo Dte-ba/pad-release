@@ -9,7 +9,7 @@ var ip = require('ip');
 var gui = process.env.NW_GUI = require('nw.gui');
 var win = gui.Window.get();
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+process.env.NODE_ENV = 'production';
 process.env.PAD_MODE = 'desktop';
 
 var rootPath = process.cwd();
