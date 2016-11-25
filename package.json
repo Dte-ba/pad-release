@@ -1,6 +1,6 @@
 {
   "name": "pad",
-  "version": "6.1.10",
+  "version": "6.1.11",
   "dependencies": {
     "async": "^2.0.1",
     "babel-polyfill": "^6.7.2",
@@ -44,5 +44,5 @@
     "frame": true
   },
   "chromium-args": "--enable-experimental-web-platform-features --enable-threaded-compositing",
-  "padversion": "v6.1.10-beta"
+  "padversion": "v6.1.11-beta"
 }

@@ -487,7 +487,7 @@ angular.module('padApp').controller('MainCtrl', function ($rootScope, $timeout, 
   $rootScope._mode = $rootScope._mode || $stateParams.mode;
   $rootScope._port = $rootScope._port || $stateParams.port;
 
-  var html = '<div class="text-center"><strong>Tu PAD en Red</strong></div>' + '<div class="text-center">Tu estudiantes pueden acceder en su navegador desde</div>' + '<div class="text-center"><strong>http://' + $rootScope._localip + ':' + $rootScope._port + '</strong></div>';
+  var html = '<div class="text-center"><strong>Tu PAD en Red</strong></div>' + '<div class="text-center">Tus estudiantes pueden acceder en su navegador desde</div>' + '<div class="text-center"><strong>http://' + $rootScope._localip + ':' + $rootScope._port + '</strong></div>';
 
   if ($rootScope._localip === '127.0.0.1') {
     html = '<div class="text-center"><strong>Tu PAD en Red</strong></div>' + '<div class="text-center">Al parecer no estas conectado a una red</div>';
