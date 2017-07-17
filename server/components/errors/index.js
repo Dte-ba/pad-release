@@ -12,12 +12,12 @@ module.exports[404] = function pageNotFound(req, res) {
   };
 
   res.status(result.status);
-  res.render(viewFilePath, function (err) {
+  res.render(viewFilePath, {}, function (err, html) {
     if (err) {
-      return res.json(result, result.status);
+      return res.status(result.status).json(result);
     }
 
-    res.render(viewFilePath);
+    res.send(html);
   });
 };
 //# sourceMappingURL=index.js.map

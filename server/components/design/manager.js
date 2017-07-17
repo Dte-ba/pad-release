@@ -88,6 +88,7 @@ function mapAreas(areas) {
         name: ax.name,
         kebadCase: encodeAx,
         img: img
+        //fullpath: full
       };
 
       rax.blocks = ax.blocks.map(function (b) {

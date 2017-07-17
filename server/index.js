@@ -4,11 +4,19 @@
 
 'use strict';
 
+// Set default node environment to development
+
+var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+if (env === 'development' || env === 'test') {
+  // Register the Babel require hook
+  require('babel-register');
+}
+
 var osenv = require('osenv');
 var path = require('path');
 var fs = require('fs');
 var util = require('util');
-var moment = require('moment');
 
 var ProgressBar = require('progress');
 

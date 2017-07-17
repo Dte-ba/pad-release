@@ -16,7 +16,7 @@ var rootPath = process.cwd();
 
 if (process.env.NODE_ENV === 'development') {
   win.showDevTools();
-  rootPath = path.join(process.cwd(), '/../');
+  rootPath = path.join(process.cwd(), '/../dist/');
 }
 
 function start(document) {
