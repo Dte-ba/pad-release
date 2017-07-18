@@ -16,6 +16,16 @@ exports.default = function (app) {
   if (process.env.PAD_MODE) {
     mode = process.env.PAD_MODE;
   }
+
+  // make open for desktop apps
+  if (mode === 'desktop') {
+    app.route('/open').post(function (req, res) {
+      var p = req.query.path;
+      (0, _open2.default)(p);
+      res.json({});
+    });
+  }
+
   // add application information
   app.route('/api/info').get(function (req, res) {
     res.json({
@@ -42,5 +52,9 @@ var _errors2 = _interopRequireDefault(_errors);
 var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
+
+var _open = require('open');
+
+var _open2 = _interopRequireDefault(_open);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

@@ -49,11 +49,11 @@ if (_fs2.default.existsSync(j)) {
 }
 
 pad.startServer = function (ops) {
-  console = ops.console;
-  var mode = ops.mode || process.env.PAD_MODE || 'server';
 
-  app.set('pad-mode', mode);
   ops = ops || {};
+  var mode = ops.mode || process.env.PAD_MODE || 'server';
+  app.set('pad-mode', mode);
+
   if (ops.env !== undefined) {
     process.env.NODE_ENV = ops.env;
   }
