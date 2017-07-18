@@ -1,6 +1,6 @@
 {
   "name": "pad",
-  "version": "6.2.11",
+  "version": "6.2.12",
   "dependencies": {
     "angular": "~1.6.0",
     "angular-animate": "~1.6.0",
@@ -58,5 +58,5 @@
     "frame": true
   },
   "chromium-args": "--enable-experimental-web-platform-features --enable-threaded-compositing",
-  "padversion": "v6.2.11-beta"
+  "padversion": "v6.2.12-beta"
 }
