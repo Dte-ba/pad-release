@@ -84,4 +84,3 @@ module.exports = {
   }
 
 };
-//# sourceMappingURL=query.js.map

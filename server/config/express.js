@@ -26,7 +26,6 @@ exports.default = function (app) {
   app.set('views', _environment2.default.root + '/server/views');
   app.engine('html', require('ejs').renderFile);
   app.set('view engine', 'html');
-  app.use((0, _shrinkRay2.default)());
   app.use(_bodyParser2.default.urlencoded({ extended: false }));
   app.use(_bodyParser2.default.json());
   app.use((0, _methodOverride2.default)());
@@ -95,10 +94,6 @@ var _morgan = require('morgan');
 
 var _morgan2 = _interopRequireDefault(_morgan);
 
-var _shrinkRay = require('shrink-ray');
-
-var _shrinkRay2 = _interopRequireDefault(_shrinkRay);
-
 var _bodyParser = require('body-parser');
 
 var _bodyParser2 = _interopRequireDefault(_bodyParser);
@@ -124,4 +119,3 @@ var _environment = require('./environment');
 var _environment2 = _interopRequireDefault(_environment);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-//# sourceMappingURL=express.js.map

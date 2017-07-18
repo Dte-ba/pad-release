@@ -122,4 +122,3 @@ manager.areas = function (force, cb) {
 };
 
 module.exports = manager;
-//# sourceMappingURL=manager.js.map

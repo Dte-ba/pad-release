@@ -85,4 +85,3 @@ manager.get = function (name) {
 };
 
 module.exports = manager;
-//# sourceMappingURL=index.js.map

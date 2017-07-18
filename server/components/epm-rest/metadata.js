@@ -18,4 +18,3 @@ module.exports = function (req, res, next) {
     });
   });
 };
-//# sourceMappingURL=metadata.js.map

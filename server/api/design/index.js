@@ -69,4 +69,3 @@ router.get('/transversales', function (req, res) {
 });
 
 module.exports = router;
-//# sourceMappingURL=index.js.map

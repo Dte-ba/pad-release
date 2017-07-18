@@ -20,4 +20,3 @@ module.exports[404] = function pageNotFound(req, res) {
     res.send(html);
   });
 };
-//# sourceMappingURL=index.js.map

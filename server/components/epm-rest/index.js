@@ -36,4 +36,3 @@ module.exports = function () {
 
   return app;
 };
-//# sourceMappingURL=index.js.map

@@ -57,4 +57,3 @@ if (pad.app.get('env') === "production") {
     console.log(util.inspect(err));
   });
 }
-//# sourceMappingURL=index.js.map

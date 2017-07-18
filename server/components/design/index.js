@@ -119,4 +119,3 @@ design.transversales = function (cb) {
 };
 
 module.exports = design;
-//# sourceMappingURL=index.js.map

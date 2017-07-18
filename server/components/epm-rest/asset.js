@@ -43,4 +43,3 @@ module.exports = function (req, res, next) {
     });
   });
 };
-//# sourceMappingURL=asset.js.map

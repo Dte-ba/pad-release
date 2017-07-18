@@ -88,4 +88,3 @@ pad.startServer = function (ops) {
 
   return defer.promise;
 };
-//# sourceMappingURL=app.js.map
