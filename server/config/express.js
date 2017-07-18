@@ -10,6 +10,7 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = function (app) {
   var env = app.get('env');
+  var mode = app.get('pad-mode');
 
   if (env === 'development' || env === 'test') {
     app.use(_express2.default.static(_path2.default.join(_environment2.default.root, '.tmp')));
@@ -31,11 +32,11 @@ exports.default = function (app) {
   app.use((0, _methodOverride2.default)());
   app.use((0, _cookieParser2.default)());
 
-  if (env === 'development') {
+  if (env === 'development' && mode !== 'desktop') {
     var webpackDevMiddleware = require('webpack-dev-middleware');
     var stripAnsi = require('strip-ansi');
     var webpack = require('webpack');
-    var makeWebpackConfig = require('../../webpack.make');
+    var makeWebpackConfig = require(_path2.default.resolve(__dirname, '../../webpack.make'));
     var webpackConfig = makeWebpackConfig({ DEV: true });
     var compiler = webpack(webpackConfig);
     var browserSync = require('browser-sync').create();
